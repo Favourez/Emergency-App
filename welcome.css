@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: url("assets/fire.png") no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  background-color: transparent;
+  text-align: center;
+  max-width: 500px;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin: 20px 0 10px;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+ul {
+  text-align: left;
+  margin: 0 auto 20px;
+  padding-left: 20px;
+  font-size: 0.95rem;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+.disclaimer {
+  font-size: 0.85rem;
+  margin-top: 20px;
+  color: #eee;
+}
+
+.agreement {
+  font-size: 0.85rem;
+  margin: 15px 0;
+  color: #ccc;
+}
+
+.agreement a {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+button {
+  background-color: #ffc107;
+  color: black;
+  padding: 15px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 300px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e0a800;
+}
