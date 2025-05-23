@@ -1,0 +1,11 @@
+server {
+    listen 80;
+    server_name srv838312.hstgr.cloud;
+
+    root /var/www/emergency-app;
+    index index.html;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
