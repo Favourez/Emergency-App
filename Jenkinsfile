@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/Favourez/Emergency-App.git'
+                git branch: 'main', url: 'https://github.com/Favourez/Emergency-App.git'
             }
         }
 
@@ -17,9 +17,11 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying to VPS...'
-                sh '''
-                scp -r * root@93.127.214.57:/var/www/emergency-app/
-                '''
+                sshagent(['vps-ssh-key']) {
+                    sh '''
+                    scp -o StrictHostKeyChecking=no -r ./static/* root@93.127.214.57:/var/www/emergency-app/
+                    '''
+                }
             }
         }
     }
