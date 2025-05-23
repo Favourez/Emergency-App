@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/your-username/loope-app.git'
+                git 'https://github.com/Favourez/Emergency-App.git'
             }
         }
 
