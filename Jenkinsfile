@@ -4,9 +4,10 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/Favourez/Emergency-App.git'
+                git branch: 'main', url: 'https://github.com/Favourez/Emergency-App.git'
             }
         }
+
 
         stage('Build') {
             steps {
