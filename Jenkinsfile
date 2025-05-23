@@ -8,6 +8,7 @@ pipeline {
             }
         }
 
+
         stage('Build') {
             steps {
                 echo 'Static site — No build step required'
