@@ -1,1 +1,3 @@
-http://srv838312.hstgr.cloud
+VPS live Server: http://srv838312.hstgr.cloud
+
+GitHub Repo: https://github.com/Favourez/Emergency-App
